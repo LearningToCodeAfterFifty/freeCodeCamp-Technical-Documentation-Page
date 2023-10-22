@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: palegreen;
+  margin: 16px;
+}
+
+#navbar ul{
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover, #reference a:hover {
+  color: violet;
+}
+
+pre {
+  background-color: black;
+  color: green;
+  max-width: 90%;
+  margin: auto;
+  padding: 30px;
+  overflow-x: scroll;
+  overflow-y: none;
+}
+
+#reference a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 700px) {
+  body {
+    display: flex;
+  }
+
+  #navbar {
+    min-width: 300px;
+  }
+
+  #navbar ul {
+    padding-inline-start: 0;
+    text-align: left;
+    display: block;
+  } 
+
+  pre {
+    overflow: hidden;
+  }
+}
